@@ -38,6 +38,8 @@ main{
 }
 
 .pokemon{
+    min-height: 7.3rem;
+    width: 45.7rem;
     gap:1rem;
     background: var(--box-color);
     padding: 1rem;
@@ -45,6 +47,7 @@ main{
 }
 
 .pokemon_info{
+    min-width: 8rem;
     align-self: normal;
     padding:.5rem 0;
 }
@@ -68,8 +71,9 @@ button{
 }
 
 .whos_that_pokemon{
+    font-weight: 580;
     border-color:var(--secondary-color);
     background-color: var(--secondary-color);
     margin:1rem auto;
-    padding:0 1rem;
+    padding:.5rem 1rem;
 }
