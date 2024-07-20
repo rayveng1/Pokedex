@@ -1,7 +1,11 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 :root{
     --primary-color:red;
     --secondary-color:rgb(10, 157, 10);
-    --box-color:rgba(211, 211, 211, 0.84);
+    --box-color:rgba(211, 211, 211, 0.766);
     --button-color:rgb(81, 76, 76);
 }
 
@@ -9,12 +13,19 @@ html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1,h2,h3, h4{
+body{
+    background-image: url("./pokedex-background.svg");
+    background-size:cover;
+    min-height: 100vh;
+}
+
+h1,h2,h3,h4{
     margin:0;
 }
 
 .container{
     padding:0 7rem;
+    margin:0 auto;
 }
 
 .d-flex{
@@ -33,12 +44,15 @@ h1,h2,h3, h4{
     border-bottom: .2rem solid black;
 }
 
-main{
+main.container{
     gap:1rem;
+    max-height: 80vh;
+    overflow-y: auto;
+    border: 1rem solid red;
 }
 
 .pokemon{
-    min-height: 7.3rem;
+    min-height: 9rem;
     width: 45.7rem;
     gap:1rem;
     background: var(--box-color);
@@ -49,6 +63,7 @@ main{
 .pokemon_info{
     align-self: normal;
     padding:.5rem 0;
+    gap:1rem;
     flex:1;
 }
 
@@ -67,15 +82,16 @@ h1{
     color:white;
 }
 
-button{
+button, button.reset_button{
     background-color: var(--button-color);
     border-radius: .4rem;
     color:white;
     box-shadow: .13rem .13rem black;
     cursor: pointer;
+    padding:.25rem .25rem;
 }
 
-.whos_that_pokemon{
+button.whos_that_pokemon{
     font-weight: 580;
     border-color:var(--secondary-color);
     background-color: var(--secondary-color);

@@ -20,9 +20,9 @@ const type_colors = {
 }
 
 async function generateNewPokemon(){
-    const pokemonData = await requestPokeAPI(Math.ceil(Math.random() * 151));
+    const pokemonData = await requestPokeAPI(Math.ceil(Math.random() * 251));
     document.querySelector("main.container").innerHTML += `
-    <section class="d-flex pokemon">
+    <section class="d-flex pokemon border-opacity-25">
             <div class="d-flex column pokemon_info">
                 <h2 class="pokemon_name">${pokemonData[0]}</h2>
                 <h4 class="pokemon_number">#${pokemonData[1]}</h4>
