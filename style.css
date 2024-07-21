@@ -23,6 +23,11 @@ h1,h2,h3,h4{
     margin:0;
 }
 
+h2{
+    font-size:x-large;
+    font-weight: bold;
+}
+
 .container{
     padding:0 7rem;
     margin:0 auto;
@@ -48,16 +53,15 @@ main.container{
     gap:1rem;
     max-height: 80vh;
     overflow-y: auto;
-    border: 1rem solid red;
 }
 
 .pokemon{
     min-height: 9rem;
     width: 45.7rem;
     gap:1rem;
-    background: var(--box-color);
     padding: 1rem;
     border-radius:.87rem;
+    border: .4rem solid var(--box-color);
 }
 
 .pokemon_info{
@@ -85,7 +89,6 @@ h1{
 button, button.reset_button{
     background-color: var(--button-color);
     border-radius: .4rem;
-    color:white;
     box-shadow: .13rem .13rem black;
     cursor: pointer;
     padding:.25rem .25rem;
